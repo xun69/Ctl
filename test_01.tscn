@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://b2lv1xdnfmdro"]
+
+[node name="test01" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="layout" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 308.0
+offset_bottom = 146.0
+size_flags_horizontal = 3
+
+[node name="label" type="Label" parent="layout"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "测试"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="layout"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="label" type="Label" parent="layout/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "姓名"
+
+[node name="text" type="LineEdit" parent="layout/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "请输入姓名"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="layout"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="label" type="Label" parent="layout/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "性别"
+
+[node name="select" type="OptionButton" parent="layout/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+item_count = 2
+selected = 0
+popup/item_0/text = "男"
+popup/item_0/id = 0
+popup/item_1/text = "女"
+popup/item_1/id = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="layout"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="button" type="Button" parent="layout/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "提交"
+
+[node name="button2" type="Button" parent="layout/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "清除"
